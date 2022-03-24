@@ -1,0 +1,6 @@
+.envs/*.env
+.DS_Store
+*/.DS_Store
+*.py_cache
+/*.py_cache
+.vscode/settings.json

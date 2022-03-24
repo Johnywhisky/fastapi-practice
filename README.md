@@ -14,3 +14,7 @@ config, database, api 분리
 
 ### database
 1. Model 별 crud, models 정의, schema 정의
+
+## 2차 목표
+1. naver 부동산 crawling api
+2. crawoling 전처리 및 db modeling

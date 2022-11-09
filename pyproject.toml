@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "fastapi-practice"
+version = "0.1.0"
+description = "fastapi practice repo."
+authors = ["Johnywhisky <92sursumcorda@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiohttp = "^3.8.3"
+aiofiles = "^22.1.0"
+fastapi = "^0.86.0"
+SQLAlchemy = "^1.4.43"
+uvicorn = "^0.19.0"
+bcrypt = "^4.0.1"
+pydantic = "^1.10.2"
+beautifulsoup4 = "^4.11.1"
+Pillow = "^9.3.0"
+psycopg2-binary = "^2.9.5"
+gunicorn = "^20.1.0"
+pytest = "^7.2.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.15.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

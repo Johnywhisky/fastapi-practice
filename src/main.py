@@ -5,13 +5,12 @@ from pathlib import Path, PosixPath
 
 import aiofiles
 import aiohttp
-import uvicorn
 from bs4 import BeautifulSoup
 from fastapi import FastAPI
 from fastapi.routing import APIRoute
 from fastapi.responses import Response
 from fastapi.requests import Request
-from config import BASE_DIR, NAVER_HEADERS
+from src.config import BASE_DIR, NAVER_HEADERS
 
 BASE_URL = "https://bjpublic.tistory.com/category/%EC%A0%84%EC%B2%B4%20%EC%B6%9C%EA%B0%84%20%EB%8F%84%EC%84%9C"
 
@@ -134,6 +133,3 @@ async def get_title():
 
 app = FastAPI()
 app.mount(path="/api/v0/", app=api)
-
-if __name__ == "__main__":
-    uvicorn.run("main:app", host="localhost", port=8080, log_level="info", reload=True)
